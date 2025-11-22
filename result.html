@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extraction Result</title>
+</head>
+<body>
+    <h2>Extracted Medical Data</h2>
+    <table border="1">
+        {% for key, value in data.items() %}
+        <tr>
+            <td><b>{{ key }}</b></td>
+            <td>{{ value }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+    <br>
+    <a href="/">Upload Another File</a>
+</body>
+</html>
